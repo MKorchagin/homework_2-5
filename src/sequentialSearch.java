@@ -12,14 +12,25 @@ public class sequentialSearch {
 
     public static void main(String[] args){
 
-        int[] arr = {158,207,392,62,315,434,487,268,405,241};
+        int[] arr = {158, //0
+                     207, //1
+                     392, //2
+                     62,  //3
+                     315, //4
+                     434, //5
+                     487, //6
+                     268, //7
+                     405, //8
+                     241  //9
+                     };
 
         //Enter your index:
-        int target = 0;
+        int target = 487;
 
             int index = search(arr,target);
-            if (index ==-1)
-                {System.out.println("The element is not found. The answer is " +index);
-                }else System.out.println("The element has index " + index);
+
+            if (index ==-1) {
+                System.out.println("The element is not found. The answer is " + index);
+            }else System.out.println("The element has index " + index);
         }
     }
